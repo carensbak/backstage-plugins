@@ -1,0 +1,22 @@
+{
+  "name": "scaffolder-dotnet-cli",
+  "version": "0.1.0",
+  "description": "Backstage scaffolder actions for the dotnet CLI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "packageManager": "yarn@4.14.1",
+  "dependencies": {
+    "@backstage/backend-plugin-api": "*",
+    "@backstage/plugin-scaffolder-node": "^0.13.3"
+  },
+  "peerDependencies": {
+    "@backstage/backend-plugin-api": "*"
+  }
+}
